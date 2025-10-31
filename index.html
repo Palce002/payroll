@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payroll Program — Main</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">GRC PAYROLL PROGRAM</div>
+    <div class="card">
+      <form id="payroll-form" class="grid form-grid">
+        <label class="full">ID Number
+          <input name="id" required placeholder="type here...">
+        </label>
+        <label>Last Name
+          <input name="last_name" required placeholder="type here...">
+        </label>
+        <label>First Name
+          <input name="first_name" required placeholder="type here...">
+        </label>
+        <label>Middle Name
+          <input name="middle_name" placeholder="type here...">
+        </label>
+        <label class="full">Position
+          <input name="position" required placeholder="type here...">
+        </label>
+        <label>Rate
+          <input name="rate" type="number" step="0.01" min="0" required placeholder="enter amount...">
+        </label>
+        <label>Work Days
+          <input name="days" type="number" step="1" min="0" required placeholder="enter days...">
+        </label>
+
+        <div class="actions full">
+          <button class="btn btn-primary" type="submit">Submit</button>
+          <a class="btn btn-ghost" href="#" onclick="document.getElementById('payroll-form').reset();return false;">Clear</a>
+        </div>
+      </form>
+    </div>
+    <p class="footer-note">Enter details then press Submit to view the breakdown.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
